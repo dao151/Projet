@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dao Tahirou Isaac — Développeur frontend</title>
+  <meta name="description" content="Portfolio de Dao Tahirou Isaac, développeur frontend passionné par les interfaces modernes." />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --fond: #15131c;
+      --texte: #f5f3fa;
+      --texte-doux: #a9a5b8;
+      --accent: #8b5cf6;
+      --accent-survol: #9d74f8;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    /* Modification manuelle : police changée en Poppins */
+    body {
+      font-family: 'Poppins', sans-serif;
+      background: var(--fond);
+      color: var(--texte);
+    }
+    .hero {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 6rem 1.5rem;
+      text-align: center;
+    }
+    .contenu { max-width: 48rem; }
+    h1 {
+      font-size: clamp(3rem, 8vw, 4.5rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      line-height: 1.1;
+    }
+    .sous-titre {
+      margin-top: 1.5rem;
+      font-size: clamp(1.25rem, 3vw, 1.5rem);
+      font-weight: 500;
+      color: var(--accent);
+    }
+    .description {
+      max-width: 36rem;
+      margin: 1.5rem auto 0;
+      font-size: clamp(1rem, 2vw, 1.125rem);
+      line-height: 1.7;
+      color: var(--texte-doux);
+    }
+    .bouton {
+      display: inline-block;
+      margin-top: 3rem;
+      padding: 1rem 2rem;
+      border-radius: 999px;
+      background: var(--accent);
+      color: #fff;
+      font-weight: 600;
+      text-decoration: none;
+      box-shadow: 0 10px 25px -8px rgba(139, 92, 246, 0.5);
+      transition: transform 0.2s, background 0.2s, box-shadow 0.2s;
+    }
+    .bouton:hover {
+      background: var(--accent-survol);
+      transform: translateY(-2px);
+      box-shadow: 0 16px 32px -8px rgba(139, 92, 246, 0.6);
+    }
+    .bouton:focus-visible { outline: 3px solid var(--accent-survol); outline-offset: 3px; }
+  </style>
+</head>
+<body>
+  <main class="hero">
+    <section class="contenu">
+      <h1>Dao Tahirou Isaac</h1>
+      <p class="sous-titre">Développeur frontend passionné par les interfaces modernes</p>
+      <p class="description">
+        Je suis passionné par le design, la photographie et la technologie. Mon objectif est de
+        créer des interfaces rapides, accessibles et agréables à utiliser.
+      </p>
+      <a href="#projets" class="bouton">Voir mes projets</a>
+    </section>
+  </main>
+</body>
+</html>
